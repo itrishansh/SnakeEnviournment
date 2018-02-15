@@ -14,7 +14,7 @@ int processInput(Snake &snake) {
     char ch;
     string input;
     do {
-    	cin >> input;
+		cin >> input;
         for (std::string::iterator it = input.begin(), end = input.end(); it != end; ++it) {
             ch = *it;
             //std::cout << ch << std::endl;
@@ -69,8 +69,9 @@ int main()
     while (cont) {
         cont = processInput(snake);
         snake.update(sb);
+		cont = (!snake.isCollide()) && cont;
+		cout << "GameOver : " << !cont << endl;
         sb.printBoard();
-        cont = (!snake.isCollide()) && cont;
     }
 
     return 0;

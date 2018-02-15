@@ -5,5 +5,6 @@
 #define BLANK_TILE ' '
 #define FOOD_TILE 'F'
 #define WALL_TILE '#'
+#define SNAKE_HEAD_TILE '-'
 
 #endif // TILE_H_INCLUDED

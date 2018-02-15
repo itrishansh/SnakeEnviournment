@@ -20,6 +20,7 @@ private:
     int length;
     //Snake head is last entry (tail of queue)
     std::vector <std::pair<int, int> > body;
+	std::pair<int, int> head;
     bool collide;
     Snake::Direction currDir;
     Snake::Direction nextDir;
